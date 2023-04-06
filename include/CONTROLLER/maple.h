@@ -15,8 +15,10 @@
 
 #define MAPLE_BUS U32
 #define MAPLE_BUS_ID U32
+#define MAPLE_BUS_ADDR U32
 #define MAPLE_PORT U32
 #define MAPLE_ADDRESS U32
+
 
 typedef struct MAPLE_DEVICE
 {
