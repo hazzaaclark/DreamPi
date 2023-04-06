@@ -17,11 +17,11 @@
 #define MAPLE_BUS_ID U32
 #define MAPLE_BUS_ADDR U32
 #define MAPLE_PORT U32
-#define MAPLE_ADDRESS U32
-
+#define MAPLE_PORT_ADDR U32
 
 typedef struct MAPLE_DEVICE
 {
+	typedef U32* GET_PORT(MAPLE_PORT_ADDR());
 	typedef U8* PLAYER_PORT;
 	typedef char* LOGICAL_PORT[3];
 	typedef MAPLE_DEVICE* CONFIG;
