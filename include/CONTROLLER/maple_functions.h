@@ -40,6 +40,24 @@
 #define INVALID_REGION 0x00
 #define DEVICE_INFO_REQ 0x01
 #define EXTENDED_DEVICE_INFO_REQ 0x02
+#define RESET 0x03
+#define SHUTDOWN 0x04
+#define DEVICE_INFO 0x05
+#define EXTENDED_INFO 0x06
+#define ACKNOWLEDGE 0x07
+#define DATA_TRANSFER 0x08
+#define GET_CONDITION 0x09
+#define GET_MEM_INFO 0x0A
+#define BLOCK_READ 0x0B
+#define BLOCK_WRITE 0x0C
+#define GET_LAST_ERROR 0x0D
+#define SET_CONDITION 0x0E
+#define AR_ERROR 0xF9
+#define VMU_ERROR 0xFA
+#define FILE_ERROR 0xFB
+#define REQ_RESEND 0xFC
+#define UNK_COMMAND 0xFD
+#define FUNCTION_CODE_NULL 0xFE
 
 #endif
 
