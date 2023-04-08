@@ -43,6 +43,14 @@ typedef volatile double VF64;
 
 #endif
 
+#ifndef ENDIANESS
+#define ENDIANESS
+
+#define LITTLE_ENDIAN 3421
+#define BIG_ENDIAN 1234
+
+#endif
+
 #ifndef COMPILER
 #define COMPILER
 
