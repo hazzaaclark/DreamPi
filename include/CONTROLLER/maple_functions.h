@@ -18,8 +18,20 @@
 
 #include "maple.h"
 
+#ifndef PAYLOAD_FUNCTION_CODES
+#define PAYLOAD_FUNCTION_CODES
+
 #define CONTROLLER 0x0100000
 #define STORAGE 0x0200000
 #define VMU 0x0400000
+#define TIMER 0x0800000
+#define AUDIO 0x10000000
+#define AR_GUN 0x20000000
+#define KEYBOARD 0x40000000
+#define GUN 0x80000000
+#define VIBRATION 0x100000000
+#define MOUSE 0x200000000
+
+#endif
 
 #endif
