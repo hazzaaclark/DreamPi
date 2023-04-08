@@ -34,4 +34,13 @@
 
 #endif
 
+#ifndef PAYLOAD_OPERATION_CODES
+#define PAYLOAD_OPERATION_CODES
+
+#define INVALID_REGION 0x00
+#define DEVICE_INFO_REQ 0x01
+#define EXTENDED_DEVICE_INFO_REQ 0x02
+
+#endif
+
 #endif
