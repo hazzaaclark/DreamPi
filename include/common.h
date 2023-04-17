@@ -60,11 +60,18 @@ typedef volatile double VF64;
 #define DC_CALL
 #endif
 
+#ifndef DECLSPEC
+#define DECLSPEC __declspec(dllexport)
+#else
+#define DECLSPEC __declspec(dllimport)
+#endif
+
+#endif
+
 #define FUNCTION_PTR(NAME, RETURN_TYPE, ARGS, ADDRESS) \
 static RETURN_TYPE(DC_CALL* NAME(), ARGS = RETURN_TYPE(DC_CALL *ARGS()ADDRESS);
 
 #define VOID_FUNCTION(NAME) void NAME(void)
 #define UNKNOWN(...)(__VA_ARGS__)(NAME) void(NAME)
 
-#endif
 #endif
