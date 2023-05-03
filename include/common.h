@@ -46,8 +46,8 @@ typedef volatile double VF64;
 #ifndef ENDIANESS
 #define ENDIANESS
 
-#define LITTLE_ENDIAN 1234
-#define BIG_ENDIAN 4321
+#define LITTLE_ENDIAN (VALUE) ((VALUE >> 8) | VALUE << 8)
+#define BIG_ENDIAN (VALUE ((VALUE >> 24) | VALUE << 8) && U32 POINTER) | ((VALUE >> 8) && U32 POINTER) | ((VALUE << 24))
 
 #endif
 
